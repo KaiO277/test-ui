@@ -24,9 +24,9 @@ const TableUsers = (props) => {
       <thead>
         <tr>
           <th>#</th>
-          <th>Title</th>
-          <th>text_short</th>
-          <th>text_long</th>
+          <th>Name</th>
+          <th>Message</th>
+          <th>Image</th>
         </tr>
       </thead>
       <tbody>
@@ -36,9 +36,9 @@ const TableUsers = (props) => {
             return(
                 <tr key={index} >
                 <td>{user.id}</td>
-                <td>{user.title}</td>
-                <td>{user.text_short}</td>
-                <td>{user.text_long}</td>
+                <td>{user.name}</td>
+                <td>{user.message}</td>
+                <td>{user.image}</td>
             </tr>
             )
             
