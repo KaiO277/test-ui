@@ -6,6 +6,7 @@ import TableUsers from './components/TableUsers';
 import Container from 'react-bootstrap/Container';
 import './App.scss'
 import ModalAddNew from './components/ModalAddNew';
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
     const [isShowModalAddNew, setIsShowModalAddNew] = useState(false)
@@ -13,6 +14,8 @@ const App = () => {
         setIsShowModalAddNew(false)
     }
     return (
+        <>
+        
         <div className='app-container'>
             <Header />
             <Container>
@@ -27,6 +30,20 @@ const App = () => {
             handleClose={handleClose}
             />
         </div>
+        <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            />
+            {/* Same as */}
+            <ToastContainer />
+        </>
     );
 };
 

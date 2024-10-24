@@ -17,7 +17,7 @@ const TableUsers = (props) => {
             setListUsers(res) 
         }    
     }
-    console.log("Check res: ", listUsers)
+    // console.log("Check res: ", listUsers)
 
     return(<>
     <Table striped bordered hover>
